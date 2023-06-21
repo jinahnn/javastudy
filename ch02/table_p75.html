@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>table 태그</title>
+</head>
+<body>
+<h2>table태그</h2>
+표
+
+<table border="1" width="400" height="320" align="right">
+<caption>표제목</caption>
+	<tr bgcolor="orange">
+		<th align="left" bgcolor="yellow">컬럼명1</th>
+		<th align="right">컬럼명2</th>
+		<th>컬럼명3</th>
+		<th>컬럼명4</th>
+		
+	</tr>
+	<tr align="left">
+		<td colspan="2">1-1</td>
+		<td>2-2</td>
+		<td>3-3</td>
+	</tr>
+	<tr align="right">
+		<td rowspan="2">2-1</td>
+		<td>2-2</td>
+		<td>2-3</td>
+		<td>2-4</td>
+	</tr>
+	<tr>
+		<td>3-2</td>
+		<td colspan="2" rowspan="2">3-3</td>
+		<!-- 안쪽테이블 시작-->
+		<table>
+		 <tr><td> 안쪽테이블 </td></tr>
+			</table>
+		<!-- 안쪽테이블 끝 -->
+	</tr>
+	<tr>
+		<td>4-1</td>
+		<td>4-4</td>
+	</tr>
+
+	</table>
+</body>
+</html>
